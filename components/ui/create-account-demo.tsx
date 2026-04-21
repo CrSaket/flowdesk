@@ -3,7 +3,7 @@
 import type { FormEvent } from "react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { useSignUp } from "@clerk/nextjs/legacy"
+import { useSignUp } from "@clerk/nextjs"
 
 import {
   authHeroImageSrc,

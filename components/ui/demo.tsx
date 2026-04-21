@@ -3,7 +3,7 @@
 import type { FormEvent } from "react"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { useSignIn } from "@clerk/nextjs/legacy"
+import { useSignIn } from "@clerk/nextjs"
 import { useUser } from "@clerk/nextjs"
 
 import {
