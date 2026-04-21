@@ -1009,8 +1009,8 @@ export default function AgentsPage() {
         <div style={{ marginBottom: 20, padding: '12px 16px', background: 'rgba(255,200,92,0.08)', border: '1px solid rgba(255,200,92,0.3)', borderRadius: 10, display: 'flex', gap: 10, alignItems: 'flex-start', animation: 'dash-enter 0.4s both' }}>
           <AlertTriangle size={15} style={{ color: '#FFC85C', flexShrink: 0, marginTop: 1 }} />
           <div>
-            <div style={{ fontSize: 13, fontWeight: 600, color: '#FFC85C', marginBottom: 2 }}>Backend offline</div>
-            <div style={{ fontSize: 12, color: 'var(--color-text-muted)' }}>Start with <code style={{ fontFamily: 'var(--font-mono)', background: 'rgba(255,255,255,0.06)', padding: '1px 5px', borderRadius: 4 }}>cd backend && uvicorn main:app --reload</code></div>
+            <div style={{ fontSize: 13, fontWeight: 600, color: '#FFC85C', marginBottom: 2 }}>Could not reach backend</div>
+            <div style={{ fontSize: 12, color: 'var(--color-text-muted)', fontFamily: 'var(--font-mono)' }}>{error}</div>
           </div>
         </div>
       )}
