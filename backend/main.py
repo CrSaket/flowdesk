@@ -75,13 +75,14 @@ warnings.filterwarnings("ignore")
 # ── App ───────────────────────────────────────────────────────────────────
 app = FastAPI(title="ClearAI Backend", version="1.0.0")
 
-_DEFAULT_ORIGINS = "http://localhost:3000,http://127.0.0.1:3000"
-ALLOWED_ORIGINS = [o.strip() for o in os.getenv("ALLOWED_ORIGINS", _DEFAULT_ORIGINS).split(",") if o.strip()]
+_DEFAULT_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*")
+_origins_raw = _DEFAULT_ORIGINS.strip()
+ALLOWED_ORIGINS = ["*"] if _origins_raw == "*" else [o.strip() for o in _origins_raw.split(",") if o.strip()]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
