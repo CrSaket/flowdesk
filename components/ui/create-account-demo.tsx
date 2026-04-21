@@ -3,7 +3,7 @@
 import type { FormEvent } from "react"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import { useSignUp } from "@clerk/nextjs"
+import { useSignUp, useClerk } from "@clerk/nextjs"
 
 import {
   authHeroImageSrc,
@@ -13,7 +13,8 @@ import { CreateAccountPage } from "@/components/ui/create-account"
 
 export default function CreateAccountPageDemo() {
   const router = useRouter()
-  const { signUp, setActive, isLoaded } = useSignUp()
+  const { signUp, isLoaded } = useSignUp()
+  const { setActive } = useClerk()
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [verifying, setVerifying] = useState(false)
