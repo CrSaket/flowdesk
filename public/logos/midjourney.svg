@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Main sail (large triangle) -->
+  <path d="M32 82L32 14L80 70Z"
+    stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Secondary sail -->
+  <path d="M35 71L35 30L63 67Z"
+    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hull -->
+  <path d="M12 79H88L81 90H19Z"
+    stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Water wave 1 -->
+  <path d="M5 94C16 91 27 96 40 93C53 90 63 95 76 92C84 90 92 93 98 92"
+    stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Water wave 2 -->
+  <path d="M2 99C13 96 24 100 37 98C50 95 62 99 75 97C85 95 93 98 100 97"
+    stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

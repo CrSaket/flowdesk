@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="s">
+      <path d="M50 2C48 25 25 48 2 50C25 52 48 75 50 98C52 75 75 52 98 50C75 48 52 25 50 2Z"/>
+    </clipPath>
+    <filter id="f" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <g clip-path="url(#s)">
+    <circle cx="50" cy="-8" r="58" fill="#EA4335" filter="url(#f)"/>
+    <circle cx="108" cy="50" r="58" fill="#4285F4" filter="url(#f)"/>
+    <circle cx="50" cy="108" r="58" fill="#34A853" filter="url(#f)"/>
+    <circle cx="-8" cy="50" r="58" fill="#FBBC04" filter="url(#f)"/>
+  </g>
+</svg>

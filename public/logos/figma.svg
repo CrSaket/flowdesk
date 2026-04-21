@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 57">
+  <!-- Red (top-left) -->
+  <path d="M0 9.5C0 4.25 4.25 0 9.5 0H19V19H9.5C4.25 19 0 14.75 0 9.5Z" fill="#F24E1E"/>
+  <!-- Orange (top-right) -->
+  <path d="M19 0H28.5C33.75 0 38 4.25 38 9.5C38 14.75 33.75 19 28.5 19H19V0Z" fill="#FF7262"/>
+  <!-- Purple (middle-left) -->
+  <path d="M0 28.5C0 23.25 4.25 19 9.5 19H19V38H9.5C4.25 38 0 33.75 0 28.5Z" fill="#A259FF"/>
+  <!-- Blue (middle-right circle) -->
+  <circle cx="28.5" cy="28.5" r="9.5" fill="#1ABCFE"/>
+  <!-- Green (bottom-left) -->
+  <path d="M0 47.5C0 42.25 4.25 38 9.5 38H19V47.5C19 52.75 14.75 57 9.5 57C4.25 57 0 52.75 0 47.5Z" fill="#0ACF83"/>
+</svg>
